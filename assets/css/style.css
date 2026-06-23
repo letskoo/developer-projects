@@ -32,15 +32,13 @@ main {
     position: relative;
     text-align: center;
 
-    padding: 100px 20px 60px;
-
-    overflow: hidden;
+    padding: 100px 20px 120px;
 
     background:
         linear-gradient(
             180deg,
             #e7efff 0%,
-            #f4f7ff 45%,
+            #f4f7ff 60%,
             #ffffff 100%
         );
 }
