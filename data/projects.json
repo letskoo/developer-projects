@@ -1,0 +1,44 @@
+[
+  {
+    "id":"photogroove",
+    "title":"PhotoGroove",
+
+    "type":"web",
+
+    "shortDescription":"AI photo booth software",
+
+    "fullDescription":"PhotoGroove is an AI-powered photo booth platform designed for studios, self-photo stores, events and franchise businesses.",
+
+    "buttonText":"Visit Website",
+
+    "downloadUrl":"https://photogroove.kr",
+
+    "thumbnail":"assets/images/projects/photogroove.jpg",
+
+    "version":"2.3.1",
+
+    "category":"Photo Booth"
+  },
+
+  {
+    "id":"rustica",
+
+    "title":"Rustica Studio",
+
+    "type":"app",
+
+    "shortDescription":"Camera capture software",
+
+    "fullDescription":"Camera capture application supporting webcams and DSLR cameras.",
+
+    "buttonText":"Download",
+
+    "downloadUrl":"https://....",
+
+    "thumbnail":"assets/images/projects/rustica.jpg",
+
+    "version":"1.0.0",
+
+    "category":"Photography"
+  }
+]

@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+    color: #0f172a;
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+
+    padding: 100px 20px 60px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            180deg,
+            #e7efff 0%,
+            #f4f7ff 45%,
+            #ffffff 100%
+        );
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #475569;
+}
+
+.ad-section {
+    margin: 40px 0;
+}
+
+.ad-placeholder {
+    border: 2px dashed #475569;
+    padding: 50px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.about-section {
+    margin-top: 60px;
+}
+
+.about-section h3 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.about-section p {
+    line-height: 1.8;
+    color: #475569;
+}
+
+.about-card,
+.mission-card,
+.community-card,
+.donate-card {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 30px;
+    margin-top: 30px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, .08);
+}
+
+.about-image,
+.mission-image,
+.community-image,
+.donate-image {
+    flex: 0 0 400px;
+    min-width: 0;
+}
+
+.about-image img,
+.mission-image img,
+.community-image img,
+.donate-image img {
+    width: 100%;
+    display: block;
+    border-radius: 18px;
+}
+
+.about-content,
+.mission-content,
+.community-content,
+.donate-content {
+    flex: 1;
+}
+
+.about-content h3,
+.mission-content h3,
+.community-content h3,
+.donate-content h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #0f172a;
+}
+
+.about-content p,
+.mission-content p,
+.community-content p,
+.donate-content p {
+    color: #475569;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.mission-section,
+.community-section,
+.donate-section {
+    margin-top: 30px;
+}
+
+.mission-card,
+.community-card,
+.donate-card {
+    min-height: 220px;
+}
+
+.hero-decoration {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.hero-decoration {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/* 흐릿한 배경 원 */
+
+.hero-decoration::before {
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(99, 102, 241, .08);
+
+    filter: blur(60px);
+
+    top: -120px;
+    left: -120px;
+}
+
+.hero-decoration::after {
+    content: "";
+
+    position: absolute;
+
+    width: 380px;
+    height: 380px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(59, 130, 246, .06);
+
+    filter: blur(60px);
+
+    right: -120px;
+    top: -80px;
+}
+
+.shape {
+    position: absolute;
+    opacity: .55;
+}
+
+/* 네모 */
+
+.shape1 {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #8b9cff;
+    top: 80px;
+    left: 120px;
+}
+
+/* 원 */
+
+.shape2 {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #8b9cff;
+    border-radius: 50%;
+    top: 160px;
+    left: 260px;
+}
+
+/* 다이아 */
+
+.shape3 {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #8b9cff;
+    transform: rotate(45deg);
+    top: 100px;
+    right: 180px;
+}
+
+/* 큰 원 */
+
+.shape4 {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #8b9cff;
+    border-radius: 50%;
+    top: 220px;
+    right: 90px;
+}
+
+/* X */
+
+.shape5 {
+    font-size: 28px;
+    color: #8b9cff;
+    top: 140px;
+    right: 320px;
+}
+
+.hero-decoration {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.footer {
+    margin-top: 80px;
+
+    background: #0f172a;
+
+    color: #ffffff;
+
+    padding: 60px 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+
+    margin-bottom: 20px;
+}
+
+.footer-content p {
+    color: #cbd5e1;
+
+    line-height: 1.8;
+}
+
+.footer-link {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    color: #60a5fa;
+
+    font-weight: 600;
+}
+
+.footer-copy {
+    margin-top: 30px;
+
+    font-size: .9rem;
+
+    color: #94a3b8;
+}

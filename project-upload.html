@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Upload Project
+    </title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/header.css">
+
+    <link rel="stylesheet" href="assets/css/community.css">
+
+    <link rel="stylesheet" href="assets/css/projects.css">
+
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            ☰
+        </button>
+
+        <div class="logo-area">
+
+            <h1 class="site-title">
+                Developer Projects
+            </h1>
+
+        </div>
+
+        <nav class="nav">
+
+            <a href="index.html">
+                ABOUT
+            </a>
+
+            <a href="projects.html" class="active">
+                PROJECTS
+            </a>
+
+            <a href="community.html">
+                COMMUNITY
+            </a>
+
+            <a href="donate.html">
+                DONATE
+            </a>
+
+        </nav>
+
+    </header>
+
+    <main class="post-page">
+
+        <section class="post-card upload-card">
+
+            <h3 class="upload-title">
+                Project Information
+            </h3>
+
+            <div class="comment-form">
+
+                <label>
+                    Project Type
+                </label>
+
+                <select id="projectType">
+
+                    <option value="web">
+                        웹
+                    </option>
+
+                    <option value="app">
+                        앱
+                    </option>
+
+                </select>
+
+                <label>
+                    Thumbnail URL
+                </label>
+
+                <input type="text" id="thumbnail" placeholder="https://">
+
+                <label>
+                    Title
+                </label>
+
+                <input type="text" id="title" placeholder="Title">
+
+                <label>
+                    Short Description
+                </label>
+
+                <input type="text" id="shortDescription" placeholder="Short Description">
+
+                <label>
+                    Full Description
+                </label>
+
+                <textarea id="fullDescription" placeholder="Full Description"></textarea>
+
+                <label>
+                    Website / Download URL
+                </label>
+
+                <input type="text" id="link" placeholder="https://">
+
+                <label>
+                    Version
+                </label>
+
+                <input type="text" id="version" placeholder="1.0.0">
+
+                <label>
+                    Category
+                </label>
+
+                <input type="text" id="category" placeholder="Category">
+
+                <button id="saveProjectBtn">
+                    Save Project
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/project-upload.js"></script>
+
+</body>
+
+</html>

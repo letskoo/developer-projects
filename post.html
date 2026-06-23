@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Post | Developer Projects</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/post.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body>
+
+    <main class="post-page">
+
+        <a href="community.html" class="back-link">
+            ← Back
+        </a>
+
+        <section class="post-card">
+
+            <div class="post-header">
+
+                <span id="postCategory"></span>
+
+                <h1 id="postTitle"></h1>
+
+                <div class="post-meta">
+
+                    <span id="postDate"></span>
+
+                    <span class="meta-icon">
+                        👁
+                        <span id="postViews"></span>
+                    </span>
+
+                    <span>
+                        <button id="likeBtn" class="like-meta-btn">
+                            ❤️ <span id="postLikes">0</span>
+                        </button>
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div id="postContent" class="post-content"></div>
+
+            <div class="post-actions">
+
+                <button id="editPostBtn" title="Edit Post">
+                    ✏️
+                </button>
+
+                <button id="deletePostBtn" title="Delete Post">
+                    🗑️
+                </button>
+
+            </div>
+
+        </section>
+
+        <section class="post-ad-section">
+
+            <div class="ad-placeholder">
+
+                Google Adsense Banner
+
+            </div>
+
+        </section>
+
+        <section class="comment-section">
+
+            <h2>
+                Comments
+            </h2>
+
+            <div id="commentList"></div>
+
+            <div class="comment-form">
+
+                <input type="text" id="nickname" placeholder="Nickname (optional)">
+
+                <textarea id="commentText" placeholder="Write a comment..."></textarea>
+
+                <button id="commentBtn">
+                    Comment
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="assets/js/post.js?v=13"></script>
+
+</body>
+
+</html>

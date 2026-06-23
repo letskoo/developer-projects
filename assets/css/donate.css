@@ -1,0 +1,144 @@
+.donate-content {
+    padding-top: 50px;
+}
+
+.donate-content h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.donate-box {
+    background: #ffffff;
+
+    padding: 30px;
+
+    margin-bottom: 25px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 24px rgba(15, 23, 42, .08);
+}
+
+.donate-box h3 {
+    margin-bottom: 30px;
+
+    color: #0f172a;
+}
+
+.donate-box p {
+
+    color: #64748b;
+
+    margin-top: auto;
+
+    padding-top: 20px;
+}
+
+.donate-qr {
+    width: 250px;
+    max-width: 100%;
+
+    background: #ffffff;
+
+    padding: 12px;
+
+    border-radius: 12px;
+
+    border: 1px solid #e2e8f0;
+}
+
+.donate-ad-section {
+    margin-top: 40px;
+}
+
+.donate-ad-section .ad-placeholder {
+
+    min-height: 120px;
+
+    border: 2px dashed #cbd5e1;
+
+    border-radius: 16px;
+
+    display: flex;
+
+    align-items: center;
+
+    background: #f8fafc;
+
+    color: #64748b;
+
+    font-weight: 600;
+}
+
+.donate-grid {
+
+    display: flex;
+
+    gap: 24px;
+
+    margin-bottom: 25px;
+}
+
+.donate-grid .donate-box {
+
+    flex: 1;
+
+    min-height: 340px;
+
+    margin-bottom: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+
+    .donate-grid {
+
+        flex-direction: column;
+    }
+
+}
+
+.paypal-button-area {
+
+    width: 250px;
+
+    height: 300px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.paypal-logo {
+
+    width: 250px;
+
+    height: 300px;
+
+    object-fit: contain;
+
+    background: #ffffff;
+
+    padding: 12px;
+
+    border-radius: 12px;
+
+    border: 1px solid #e2e8f0;
+
+    transition: .2s;
+}
+
+.paypal-logo:hover {
+
+    transform: scale(1.03);
+}

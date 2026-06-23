@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Community | Developer Projects</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/community.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            ☰
+        </button>
+
+        <div class="logo-area">
+            <h1 class="site-title">
+                Developer Projects
+            </h1>
+        </div>
+
+        <nav class="nav">
+            <a href="index.html" id="navAbout">ABOUT</a>
+            <a href="projects.html" id="navProjects">PROJECTS</a>
+            <a href="community.html" class="active" id="navCommunity">COMMUNITY</a>
+            <a href="donate.html" id="navDonate">DONATE</a>
+        </nav>
+
+        <div class="header-right">
+
+            <button id="languageBtn">
+                한국어
+            </button>
+
+            <a href="https://www.youtube.com/channel/UCwv8SQlEOPyb59Xp7Ze8T_w" target="_blank" class="youtube-link">
+                <img src="assets/images/youtube-logo.png" alt="YouTube" class="youtube-logo">
+            </a>
+
+        </div>
+
+    </header>
+
+    <section class="hero">
+
+        <div class="hero-decoration">
+            <span class="shape shape1"></span>
+            <span class="shape shape2"></span>
+            <span class="shape shape3"></span>
+            <span class="shape shape4"></span>
+            <span class="shape shape5">×</span>
+        </div>
+
+        <h2 id="communityPageTitle">
+            Community
+        </h2>
+
+        <p id="communityPageText">
+            Development updates, feedback, roadmap and announcements will be shared here.
+        </p>
+
+    </section>
+
+    <main class="community-page">
+
+        <section class="community-toolbar">
+
+            <input type="text" id="searchInput" placeholder="Search posts...">
+
+            <button id="writePostBtn">
+                Write Post
+            </button>
+
+        </section>
+
+        <section class="community-ad-section">
+
+            <div class="ad-placeholder">
+
+                Google Adsense Banner
+
+            </div>
+
+        </section>
+
+        <section class="community-board">
+
+            <table class="board-table">
+
+                <thead>
+
+                    <tr>
+                        <th id="boardNo">No</th>
+                        <th id="boardCategory">Category</th>
+                        <th id="boardTitle">Title</th>
+                        <th id="boardDate">Date</th>
+                        <th id="boardViews">Views</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="postTableBody">
+
+                    <tr>
+
+                        <td>3</td>
+
+                        <td>
+                            [개발일지]
+                        </td>
+
+                        <td>
+                            Community 제작 시작
+                        </td>
+
+                        <td>
+                            2026-06-12
+                        </td>
+
+                        <td>
+                            1
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>2</td>
+
+                        <td>
+                            [업데이트]
+                        </td>
+
+                        <td>
+                            모바일 메뉴 개선
+                        </td>
+
+                        <td>
+                            2026-06-11
+                        </td>
+
+                        <td>
+                            23
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>1</td>
+
+                        <td>
+                            [공지]
+                        </td>
+
+                        <td>
+                            Developer Projects 오픈
+                        </td>
+
+                        <td>
+                            2026-06-10
+                        </td>
+
+                        <td>
+                            104
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <div id="writeModal" class="write-modal">
+
+            <div class="write-modal-content">
+
+                <h2>Write Post</h2>
+
+                <select id="postCategory">
+
+                    <option value="공지">공지</option>
+                    <option value="업데이트">업데이트</option>
+                    <option value="개발일지">개발일지</option>
+
+                </select>
+
+                <input type="text" id="postTitleInput" placeholder="Title">
+
+                <textarea id="postContentInput" placeholder="Content"></textarea>
+
+                <div class="modal-buttons">
+
+                    <button id="savePostBtn">
+                        Save
+                    </button>
+
+                    <button id="closeModalBtn">
+                        Cancel
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <h3 id="footerTitle">
+                Developer Projects
+            </h3>
+
+            <p id="footerText">
+                Building useful software,
+                sharing ideas,
+                and learning together.
+            </p>
+
+            <a href="https://www.youtube.com/channel/UCwv8SQlEOPyb59Xp7Ze8T_w" target="_blank" class="footer-link"
+                id="footerYoutube">
+                YouTube
+            </a>
+
+            <p class="footer-copy">
+                © 2026 Developer Projects
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="assets/js/language.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/community.js?v=2"></script>
+
+</body>
+
+</html>
