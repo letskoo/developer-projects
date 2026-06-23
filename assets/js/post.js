@@ -541,6 +541,18 @@ function initPost() {
                     return;
                 }
 
+                fetch(
+                    "https://script.google.com/macros/s/AKfycbwzSdk4687OctJXQIkdaV2icxW5jWXM3sZOEJ16w96GwH_6Oz7OPbcY5rLjAh96d_nm/exec",
+                    {
+                        method: "POST",
+                        mode: "no-cors",
+                        body: JSON.stringify({
+                            type: "deletePost",
+                            postId: post.postId
+                        })
+                    }
+                );
+
                 posts.splice(
                     index,
                     1
