@@ -41,12 +41,10 @@ main {
     padding: 100px 20px 120px;
 
     background:
-        linear-gradient(
-            180deg,
+        linear-gradient(180deg,
             #e7efff 0%,
             #f4f7ff 60%,
-            #ffffff 100%
-        );
+            #ffffff 100%);
 }
 
 .hero h2 {
@@ -61,13 +59,6 @@ main {
 
 .ad-section {
     margin: 40px 0;
-}
-
-.ad-placeholder {
-    border: 2px dashed #475569;
-    padding: 50px;
-    text-align: center;
-    border-radius: 12px;
 }
 
 .about-section {
@@ -303,4 +294,34 @@ main {
     font-size: .9rem;
 
     color: #94a3b8;
+}
+
+/* ==========================
+   Google Adsense
+========================== */
+
+.ad-placeholder {
+
+    width: 100%;
+
+    min-height: 280px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 30px 0;
+
+    border: 1px dashed #dcdcdc;
+
+    border-radius: 12px;
+
+    background: #fafafa;
+
+    color: #888;
+
+    font-size: 18px;
+
 }

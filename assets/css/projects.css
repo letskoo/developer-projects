@@ -150,6 +150,11 @@
     margin-bottom: 30px;
 }
 
+#projectDescription {
+    white-space: pre-line;
+    text-align: left;
+}
+
 .download-btn {
     display: inline-block;
     background: #2563eb;

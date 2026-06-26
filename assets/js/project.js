@@ -82,7 +82,7 @@ fetch(
         document.getElementById(
             "projectDescription"
         ).textContent =
-            project.fullDescription;
+            project.fullDescription || "";
 
         document.getElementById(
             "projectVersion"
