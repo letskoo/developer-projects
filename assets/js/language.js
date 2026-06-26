@@ -54,6 +54,9 @@ const textData = {
         projectsPageTitle: "Projects",
         projectsPageText: "Browse free projects, applications and tools.",
 
+        projectPageTitle: "Project",
+        projectPageText: "Download and information",
+
         donatePageTitle: "Donate",
         donatePageText: "Support future development, free tools, and community projects.",
 
@@ -82,6 +85,21 @@ const textData = {
 
         footerYoutube:
             "YouTube",
+
+        backText:
+            "← Back",
+
+        commentsTitle:
+            "Comments",
+
+        nicknamePlaceholder:
+            "Nickname (optional)",
+
+        commentPlaceholder:
+            "Write a comment...",
+
+        commentButton:
+            "Comment",
     },
 
     ko: {
@@ -133,6 +151,9 @@ const textData = {
         projectsPageTitle: "프로젝트",
         projectsPageText: "무료 프로젝트, 애플리케이션, 도구들을 둘러보세요.",
 
+        projectPageTitle: "프로젝트",
+        projectPageText: "다운로드 및 프로젝트 정보를 확인할 수 있습니다.",
+
         donatePageTitle: "후원",
         donatePageText: "무료 프로젝트와 커뮤니티 개발이 계속될 수 있도록 후원해주세요.",
 
@@ -161,6 +182,21 @@ const textData = {
 
         footerYoutube:
             "유튜브",
+
+        backText:
+            "← 뒤로",
+
+        commentsTitle:
+            "댓글",
+
+        nicknamePlaceholder:
+            "닉네임 (선택)",
+
+        commentPlaceholder:
+            "댓글을 입력하세요...",
+
+        commentButton:
+            "댓글 등록",
     }
 };
 
@@ -401,6 +437,22 @@ function applyLanguage() {
             data.projectsPageText;
     }
 
+    const projectPageTitle =
+        document.getElementById("projectPageTitle");
+
+    if (projectPageTitle) {
+        projectPageTitle.textContent =
+            data.projectPageTitle;
+    }
+
+    const projectPageText =
+        document.getElementById("projectPageText");
+
+    if (projectPageText) {
+        projectPageText.textContent =
+            data.projectPageText;
+    }
+
     const donatePageTitle =
         document.getElementById("donatePageTitle");
 
@@ -468,6 +520,46 @@ function applyLanguage() {
     if (donatePageText) {
         donatePageText.textContent =
             data.donatePageText;
+    }
+
+    const backText =
+        document.getElementById("backText");
+
+    if (backText) {
+        backText.textContent =
+            data.backText;
+    }
+
+    const commentsTitle =
+        document.getElementById("commentsTitle");
+
+    if (commentsTitle) {
+        commentsTitle.textContent =
+            data.commentsTitle;
+    }
+
+    const nickname =
+        document.getElementById("nickname");
+
+    if (nickname) {
+        nickname.placeholder =
+            data.nicknamePlaceholder;
+    }
+
+    const commentText =
+        document.getElementById("commentText");
+
+    if (commentText) {
+        commentText.placeholder =
+            data.commentPlaceholder;
+    }
+
+    const commentBtn =
+        document.getElementById("commentBtn");
+
+    if (commentBtn) {
+        commentBtn.textContent =
+            data.commentButton;
     }
 
 }
