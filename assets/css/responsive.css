@@ -1,8 +1,15 @@
 @media (max-width: 768px) {
 
     .header {
-        position: sticky;
+
+        position: fixed;
+
         top: 0;
+        left: 0;
+
+        width: 100%;
+
+        z-index: 9999;
 
         height: 64px;
 
@@ -206,6 +213,16 @@
         top: 105px;
         right: 95px;
         font-size: 22px;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    body {
+
+        padding-top: 64px;
+
     }
 
 }
