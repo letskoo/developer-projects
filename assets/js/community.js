@@ -57,24 +57,33 @@ function renderPosts() {
             : "";
 
     const filteredPosts =
-        posts.filter((post) => {
+        posts
+            .filter((post) => {
 
-            const title =
-                post.title.toLowerCase();
+                const title =
+                    post.title.toLowerCase();
 
-            const category =
-                post.category.toLowerCase();
+                const category =
+                    post.category.toLowerCase();
 
-            const content =
-                post.content.toLowerCase();
+                const content =
+                    post.content.toLowerCase();
 
-            return (
-                title.includes(keyword) ||
-                category.includes(keyword) ||
-                content.includes(keyword)
-            );
+                return (
+                    title.includes(keyword) ||
+                    category.includes(keyword) ||
+                    content.includes(keyword)
+                );
 
-        });
+            })
+            .sort((a, b) => {
+
+                if (a.category === "공지") return -1;
+                if (b.category === "공지") return 1;
+
+                return b.postId - a.postId;
+
+            });
 
     const latestNotice =
         filteredPosts.find(
@@ -154,7 +163,7 @@ function renderPosts() {
             );
 
         tr.innerHTML = `
-            <td>${posts.length - realIndex}</td>
+            <td>${realIndex + 1}</td>
             <td>[${post.category}]</td>
             <td>
 ${post.title}
